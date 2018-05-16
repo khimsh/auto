@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AUTO | The Corner Garage For Collector Cars</title>
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="dist/css/main.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="home">
+        <!-- HEADING -->
+        <div class="header__title-box">
+            <h1 class="header__title">au<span>t</span>o</h1>
+            <h2 class="sr-only">The Corner Garage For Collector Cars</h2>
+        </div><!-- .header__title-box -->
+
+        <!-- MENU ICON -->
+        <div class="menu-icon" id="menu-toggle">
+            <span class="menu-icon__top"></span>
+            <span class="menu-icon__mid"></span>
+            <span class="menu-icon__bottom"></span>
+        </div><!-- .menu-icon -->
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav" id="nav">
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#home" class="main-nav__link">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#services" class="main-nav__link">services</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#contact" class="main-nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- SLIDER CONTAINER-->
+        <div class="slider-box">
+            <!-- SLIDE -->
+            <figure class="slide">
+                <img src="dist/images/red-car.jpg" alt="Photo of a red car" class="slide__image">
+                <figcaption class="slide__details">
+                    <p class="slide__date">27.11.2018</p>
+                    <h3 class="slide__title">Vintage Auto Exhibition</h3>
+                </figcaption>
+            </figure>
+
+            <!-- SLIDER CONTROLS -->
+            <div class="control control--left">
+                <a href="" class="control--prev">&larr;</a>
+            </div>
+            <div class="control control--right">
+                <a href="" class="control--next">&rarr;</a>
+            </div>
+        </div><!-- .slider-box -->
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- Section: SERVICES -->
+        <section class="services" id="services">
+            <h2 class="heading-secondary">
+                The corner garage for collector cars
+            </h2>
+
+            <ul class="services__content">
+                <li class="service">
+                    <img class="service__icon" src="dist/images/services/modify.svg">
+                    <h3 class="service__title">Modify</h3>
+                </li>
+                <li class="service">
+                    <img class="service__icon" src="dist/images/services/buy.svg">
+                    <h3 class="service__title">Buy</h3>
+                </li>
+                <li class="service">
+                    <img class="service__icon" src="dist/images/services/repair.svg">
+                    <h3 class="service__title">Repair</h3>
+                </li>
+            </ul>
+
+            <div class="animation">
+                <!-- ANIMATION -->
+                <img src="dist/images/animation/mountains.svg" alt="" class="mountains">
+                <img src="dist/images/animation/road.svg" alt="" class="road">
+                <img src="dist/images/animation/trees.svg" alt="" class="trees">
+                <img src="dist/images/animation/wagon.png" alt="" class="car">
+            </div>
+        </section>
+
+        <!-- Section: CONTACT -->
+        <section class="contact" id="contact">
+            <div id="map" class="contact__map"></div>
+            <div class="contact__info">
+                <div class="contact__social">
+                    <h3 class="heading-tertiary">CONTACT INFROMATION</h3>
+
+                    <h4 class="subheading">click to view</h4>
+
+                    <!-- SOCIAL MEDIA ICONS -->
+                    <div class="social-media-icons hide-on-medium-and-down">
+                        <!-- GOOGLE+ -->
+                        <a class="social-media" href="#">
+                            <svg class="social-media__icon">
+                                <use xlink:href="dist/images/sprite.svg#icon-google-plus"></use>
+                            </svg>
+                        </a>
+                        <!-- FACEBOOK -->
+                        <a class="social-media" href="#">
+                            <svg class="social-media__icon">
+                                <use xlink:href="dist/images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <!-- TWITTER -->
+                        <a class="social-media" href="#">
+                            <svg class="social-media__icon">
+                                <use xlink:href="dist/images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </div><!-- .social-media-icons -->
+                </div><!-- .contact__social -->
+
+                <!-- CONTACT FORM -->
+                <form action="#" class="form">
+
+                    <h3 class="form__heading">Get in touch</h3>
+
+                    <!-- INPUT: TEXT -->
+                    <div class="form__group form__group--text">
+                        <div class="form__item form__item--text">
+                            <input type="text" name="name" id="name" class="form__input" placeholder="name">
+                            <label for="name" class="form__label">name</label>
+                        </div><!-- .form__item -->
+
+                        <div class="form__item form__item--text">
+                            <input type="email" name="email" id="email" class="form__input" placeholder="email">
+                            <label for="email" class="form__label">email</label>
+                        </div><!-- .form__item -->
+
+                        <div class="form__item form__item--text">
+                            <input type="text" name="subject" id="subject" class="form__input" placeholder="subject">
+                            <label for="subject" class="form__label">subject</label>
+                        </div><!-- .form__item -->
+
+                        <div class="form__item form__item--text">
+                            <textarea name="textarea" cols="30" rows="5" placeholder="text" class="form__textarea"></textarea>
+                        </div><!-- .form__item -->
+                    </div><!-- .form__group -->
+
+                    <!-- INPUT: RADIO -->
+                    <div class="form__group form__group--radio">
+                        <div class="form__item form__item--radio">
+                            <input type="radio" name="gender" value="male" id="male" class="form__input">
+                            <label for="male" class="form__label">male</label>
+                        </div><!-- .form__item -->
+
+                        <div class="form__item form__item--radio">
+                            <input type="radio" name="gender" value="female" id="female" class="form__input">
+                            <label for="female" class="form__label">female</label>
+                        </div><!-- .form__item -->
+                    </div><!-- .form__group -->
+
+                    <!-- INPUT: CHECKBOX -->
+                    <div class="form__group form__group--checkbox">
+                        <h3 class="form__group__heading">Sign up for newsletter:</h3>
+
+                        <div class="form__item form__item--checkbox">
+                            <input type="checkbox" name="newsletter" id="images" class="form__input">
+                            <label for="images" class="form__label">receive images</label>
+                        </div><!-- .form__item -->
+
+                        <div class="form__item form__item--checkbox">
+                            <input type="checkbox" name="newsletter" id="promotions" class="form__input">
+                            <label for="promotions" class="form__label">receive promotions</label>
+                        </div><!-- .form__item -->
+
+                        <div class="form__item form__item--checkbox">
+                            <input type="checkbox" name="newsletter" id="updates" class="form__input">
+                            <label for="updates" class="form__label">receive updates</label>
+                        </div><!-- .form__item -->
+
+                        <div class="form__item form__item--checkbox">
+                            <input type="checkbox" name="newsletter" id="job" class="form__input">
+                            <label for="cameras" class="form__label">receive job offers</label>
+                        </div><!-- .form__item -->
+                    </div><!-- .form__group -->
+
+                    <button type="submit" class="form__btn">SEND</button>
+                </form>
+            </div><!-- .contact__info -->
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="copyright">
+            &copy; copyright 2018
+        </p>
+        <p class="authors">
+            created by:
+        </p>
+    </footer>
+
+
+
+
+    <script>
+        function initMap() {
+            var myLatLng = {lat: -25.363, lng: 131.044};
+
+            // Create a map object and specify the DOM element
+            // for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 4
+            });
+
+            // Create a marker and set its position.
+            var marker = new google.maps.Marker({
+            map: map,
+            position: myLatLng,
+            title: 'Hello World!'
+            });
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGfU6TnpCFkk1OrAR9rlV1TDKGrqQiWKQ&callback=initMap"
+    async defer></script>
+
+    <script src="dist/js/index.js"></script>
+</body>
+</html>

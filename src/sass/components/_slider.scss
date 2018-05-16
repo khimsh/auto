@@ -1,0 +1,73 @@
+/* Slider */
+.slider-box {
+    width: 100%;
+    height: 100vh;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__details {
+        position: absolute;
+        right: 5rem;
+        bottom: 3rem;
+
+        color: var(--color-white);
+        text-align: right;
+    }
+
+    &__date {
+        font-weight: 700;
+        font-size: 5rem;
+        letter-spacing: .4rem;
+    }
+
+    &__title {
+        font-family: var(--font-regular);
+        font-weight: 200;
+        font-size: 2.4rem;
+        letter-spacing: .4rem;
+    }
+}
+
+/* Slider Controls */
+.control {
+    width: 6.4rem;
+    height: 12.8rem;
+    background-color: var(--color-white);
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--left {
+        left: 0;
+        border-top-right-radius: 20.8rem;
+        border-bottom-right-radius: 20.8rem;
+    }
+
+    &--right {
+        right: 0;
+        border-top-left-radius: 20.8rem;
+        border-bottom-left-radius: 20.8rem;
+    }
+}
+
+.control a {
+    display: block;
+    font-size: 4rem;
+    color: var(--color-red);
+    text-decoration: none;
+}

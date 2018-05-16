@@ -1,0 +1,26 @@
+{
+  "name": "auto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khimsh/auto.git"
+  },
+  "author": "Ia Khimsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khimsh/auto/issues"
+  },
+  "homepage": "https://github.com/khimsh/auto#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
