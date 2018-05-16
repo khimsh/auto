@@ -42,13 +42,13 @@
             <h2 class="sr-only">Main Navigation</h2>
             <ul class="main-nav__list">
                 <li class="main-nav__item">
-                    <a href="#home" class="main-nav__link">Home</a>
+                    <a href="#home" class="main-nav__link scroll">Home</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#services" class="main-nav__link">services</a>
+                    <a href="#services" class="main-nav__link scroll">services</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#contact" class="main-nav__link">Contact</a>
+                    <a href="#contact" class="main-nav__link scroll">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -64,12 +64,28 @@
                 </figcaption>
             </figure>
 
+            <figure class="slide">
+                <img src="dist/images/car-2.jpeg" alt="Photo of a red car" class="slide__image">
+                <figcaption class="slide__details">
+                    <p class="slide__date">27.11.2018</p>
+                    <h3 class="slide__title">Vintage Auto Exhibition</h3>
+                </figcaption>
+            </figure>
+
+            <figure class="slide">
+                <img src="dist/images/car-3.jpeg" alt="Photo of a red car" class="slide__image">
+                <figcaption class="slide__details">
+                    <p class="slide__date">27.11.2018</p>
+                    <h3 class="slide__title">Vintage Auto Exhibition</h3>
+                </figcaption>
+            </figure>
+
             <!-- SLIDER CONTROLS -->
             <div class="control control--left">
-                <a href="" class="control--prev">&larr;</a>
+                <a href="" class="control--prev" id="arrow-left">&larr;</a>
             </div>
             <div class="control control--right">
-                <a href="" class="control--next">&rarr;</a>
+                <a href="" class="control--next" id="arrow-right">&rarr;</a>
             </div>
         </div><!-- .slider-box -->
     </header>
@@ -245,6 +261,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGfU6TnpCFkk1OrAR9rlV1TDKGrqQiWKQ&callback=initMap"
     async defer></script>
 
-    <script src="dist/js/index.js"></script>
+    <script src="dist/js/index.min.js"></script>
 </body>
 </html>
