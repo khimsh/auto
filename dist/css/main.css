@@ -9,6 +9,7 @@
   --color-red: #FF0000;
   --color-beige: #EBE8DE; }
 
+/* media query sizes */
 /* Base Styles */
 *,
 *::before,
@@ -36,7 +37,10 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1rem;
-  margin-bottom: 10rem; }
+  margin-bottom: 9rem; }
+  @media only screen and (max-width: 1400px) {
+    .heading-secondary {
+      font-size: 4rem; } }
 
 .heading-tertiary {
   font-weight: 700;
@@ -54,59 +58,165 @@ ul {
 /* Animation */
 .animation {
   width: 100%;
-  height: 32rem;
+  height: 36.3rem;
   position: absolute;
   overflow: hidden;
   bottom: 2rem; }
+  @media only screen and (max-width: 992px) {
+    .animation {
+      display: none; } }
 
 .animation > img {
   display: block; }
 
 .mountains {
+  background-image: url(../images/animation/mountains.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
-  height: 50%;
-  bottom: 5rem;
-  display: block; }
+  bottom: 2rem;
+  width: 100%;
+  height: 19.5rem; }
 
 .road {
   position: absolute;
   bottom: 0;
-  width: 100vw; }
+  background-image: url(../images/animation/road.svg);
+  width: 100%;
+  height: .3rem; }
 
 .trees {
   position: absolute;
-  bottom: 4.3rem;
-  height: 26rem;
+  bottom: 2rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
+          transform: translateX(-50%);
+  background-image: url(../images/animation/trees.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120rem;
+  height: 26.5rem; }
 
 .car {
+  height: 10rem;
+  width: auto;
   position: absolute;
   bottom: 0;
-  -webkit-animation: drive 6s ease-in infinite forwards;
-          animation: drive 6s ease-in infinite forwards; }
+  -webkit-animation: drive 7s ease-in-out infinite forwards;
+          animation: drive 7s ease-in-out infinite forwards; }
 
 @-webkit-keyframes drive {
   0% {
-    right: 0; }
+    right: -30rem; }
   100% {
     right: 100%; } }
 
 @keyframes drive {
   0% {
-    right: 0; }
+    right: -30rem; }
   100% {
     right: 100%; } }
+
+.dots {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .dots .dot {
+    position: absolute;
+    border-radius: 50%; }
+    .dots .dot--red {
+      background-color: var(--color-red); }
+    .dots .dot--white {
+      background-color: var(--color-white); }
+    .dots .dot--1 {
+      width: 3rem;
+      height: 3rem;
+      left: 2%;
+      top: 61.85%; }
+    .dots .dot--2 {
+      width: 3rem;
+      height: 3rem;
+      left: 12.5%;
+      top: 29.25%; }
+    .dots .dot--3 {
+      width: 15rem;
+      height: 15rem;
+      opacity: .4;
+      left: 21.5%;
+      top: 33.4%; }
+    .dots .dot--4 {
+      width: 6.2rem;
+      height: 6.2rem;
+      opacity: .4;
+      left: 45%;
+      top: 5.3%; }
+    .dots .dot--5 {
+      width: 3rem;
+      height: 3rem;
+      left: 53.6%;
+      top: 32.5%; }
+    .dots .dot--6 {
+      width: 6.2rem;
+      height: 6.2rem;
+      opacity: .4;
+      left: 54.4%;
+      top: 67.3%; }
+    .dots .dot--7 {
+      width: 15rem;
+      height: 15rem;
+      opacity: .9;
+      left: 66.5%;
+      top: 12%; }
+    .dots .dot--8 {
+      width: 4rem;
+      height: 4rem;
+      opacity: .4;
+      left: 69%;
+      top: 52.8%; }
+    .dots .dot--9 {
+      width: 6.2rem;
+      height: 6.2rem;
+      opacity: .4;
+      left: 80%;
+      top: 4.35%; }
+    .dots .dot--10 {
+      width: 6.2rem;
+      height: 6.2rem;
+      opacity: .4;
+      left: 81.8%;
+      top: 45.8%; }
+
+.form__heading {
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  font-weight: 700; }
+
+.form__group--radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 .form__input {
   font-family: inherit; }
 
 .form__label {
-  font-family: inherit; }
+  font-family: inherit;
+  font-size: 1.6rem;
+  letter-spacing: .16rem; }
 
 .form__textarea {
   font-family: inherit; }
+
+.form__btn {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border: none; }
 
 /* Menu Icon */
 .menu-icon {
@@ -123,7 +233,7 @@ ul {
     background-color: var(--color-white);
     border-radius: 0;
     display: block;
-    height: .4rem;
+    height: .5rem;
     opacity: 1;
     position: absolute;
     -webkit-transition: .25s ease-in-out;
@@ -149,13 +259,13 @@ ul {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     width: 3rem;
-    top: 44%;
+    top: 48%;
     background-color: var(--color-red); }
   .menu-icon.active .menu-icon__bottom {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     width: 3rem;
-    bottom: 46%;
+    bottom: 40%;
     background-color: var(--color-red); }
 
 /* Navigation */
@@ -210,29 +320,36 @@ ul {
     display: block; }
   .slide__details {
     position: absolute;
-    right: 5rem;
-    bottom: 3rem;
+    right: 5.3rem;
+    bottom: 5rem;
     color: var(--color-white);
     text-align: right; }
   .slide__date {
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 7.2rem;
     letter-spacing: .4rem; }
+    @media only screen and (max-width: 1400px) {
+      .slide__date {
+        font-size: 3.8rem; } }
   .slide__title {
     font-family: var(--font-regular);
     font-weight: 200;
-    font-size: 2.4rem;
+    font-size: 3.9rem;
     letter-spacing: .4rem; }
+    @media only screen and (max-width: 1400px) {
+      .slide__title {
+        font-size: 2.8rem; } }
 
 /* Slider Controls */
 .control {
-  width: 6.4rem;
-  height: 12.8rem;
+  width: 10.4rem;
+  height: 20.8rem;
   background-color: var(--color-white);
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: 50;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,6 +359,10 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media only screen and (max-width: 1400px) {
+    .control {
+      width: 6.4rem;
+      height: 12.8rem; } }
   .control--left {
     left: 0;
     border-top-right-radius: 20.8rem;
@@ -253,9 +374,12 @@ ul {
 
 .control a {
   display: block;
-  font-size: 4rem;
+  font-size: 6rem;
   color: var(--color-red);
   text-decoration: none; }
+  @media only screen and (max-width: 1400px) {
+    .control a {
+      font-size: 4rem; } }
 
 /* Contact */
 .contact {
@@ -265,8 +389,11 @@ ul {
 /* Maps */
 .contact__map {
   width: 84%;
-  height: 80vh;
+  height: 82%;
   margin: 0 auto; }
+  @media only screen and (max-width: 992px) {
+    .contact__map {
+      width: 100%; } }
 
 .contact__info {
   width: 66%;
@@ -275,7 +402,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 20rem;
+  bottom: 6rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -338,7 +465,7 @@ ul {
     color: var(--color-white);
     position: absolute;
     left: 3rem;
-    top: 7.7rem; }
+    top: 7.5rem; }
   .header__title span {
     position: relative; }
   .header__title span::before {
@@ -352,42 +479,87 @@ ul {
     left: 2.1rem; }
 
 /* Services */
-.services {
+.section-services {
   width: 100%;
   height: 100vh;
   text-align: center;
   position: relative;
-  padding: 10rem 0 0 0; }
-  .services__content {
-    width: 70%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+  padding: 9rem 0 0 0; }
+  @media only screen and (max-width: 670px) {
+    .section-services {
+      height: auto;
+      margin-bottom: 8rem; } }
 
-.service {
-  background-color: var(--color-beige);
-  padding: 4rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0;
-          flex: 1 0; }
-  .service:not(:last-child) {
-    margin-right: 2rem; }
-  .service__icon {
+.services {
+  width: 120rem;
+  height: 39.5rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (max-width: 1400px) {
+    .services {
+      width: 90rem;
+      height: 30rem;
+      overflow: hidden; } }
+  @media only screen and (max-width: 992px) {
+    .services {
+      width: 91%; } }
+  @media only screen and (max-width: 670px) {
+    .services {
+      width: 91%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: auto;
+      width: 82%; } }
+  .services__item {
+    background-color: var(--color-beige);
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 6.5rem 0; }
+    @media only screen and (max-width: 670px) {
+      .services__item {
+        width: 100%; } }
+    .services__item:not(:last-child) {
+      margin-right: 2.4rem; }
+      @media only screen and (max-width: 1400px) {
+        .services__item:not(:last-child) {
+          margin-right: 2.7rem; } }
+      @media only screen and (max-width: 670px) {
+        .services__item:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 4rem; } }
+  .services__icon {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     width: 14rem;
     height: 14rem;
     display: inline-block;
-    margin-bottom: 7.4rem; }
-  .service__title {
-    font-size: 3.6rem;
+    margin-bottom: 6.5rem; }
+    @media only screen and (max-width: 1400px) {
+      .services__icon {
+        width: 10.5rem;
+        height: 10.5rem;
+        margin-bottom: 5rem; } }
+    @media only screen and (max-width: 670px) {
+      .services__icon {
+        width: 23.3rem;
+        height: 23.3rem; } }
+  .services__title {
+    font-size: 5rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1rem; }
+    @media only screen and (max-width: 1400px) {
+      .services__title {
+        font-size: 3.9rem;
+        letter-spacing: .74rem; } }

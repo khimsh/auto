@@ -7,8 +7,12 @@
 /* Maps */
 .contact__map {
     width: 84%;
-    height: 80vh;
+    height: 82%;
     margin: 0 auto;
+
+    @media only screen and (max-width: $md) {
+        width: 100%;
+    }
 }
 
 .contact__info {
@@ -16,7 +20,7 @@
     height: auto;
     display: flex;
     position: absolute;
-    bottom: 20rem;
+    bottom: 6rem;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--color-white);

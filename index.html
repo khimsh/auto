@@ -88,36 +88,50 @@
                 <a href="" class="control--next" id="arrow-right">&rarr;</a>
             </div>
         </div><!-- .slider-box -->
+
+        <!-- DOTS -->
+        <div class="dots">
+            <div class="dot dot--1 dot--red rellax" data-rellax-speed="-1"></div>
+            <div class="dot dot--2 dot--red rellax" data-rellax-speed="-3"></div>
+            <div class="dot dot--3 dot--white rellax" data-rellax-speed="2"></div>
+            <div class="dot dot--4 dot--white rellax" data-rellax-speed="5"></div>
+            <div class="dot dot--5 dot--red rellax" data-rellax-speed="1"></div>
+            <div class="dot dot--6 dot--white rellax" data-rellax-speed="-1"></div>
+            <div class="dot dot--7 dot--white rellax" data-rellax-speed="-7"></div>
+            <div class="dot dot--8 dot--white rellax" data-rellax-speed="6"></div>
+            <div class="dot dot--9 dot--red rellax" data-rellax-speed="10"></div>
+            <div class="dot dot--10 dot--red rellax" data-rellax-speed="5"></div>
+        </div>
     </header>
 
     <!-- MAIN -->
     <main class="main">
         <!-- Section: SERVICES -->
-        <section class="services" id="services">
+        <section class="section-services" id="services">
             <h2 class="heading-secondary">
                 The corner garage for collector cars
             </h2>
 
-            <ul class="services__content">
-                <li class="service">
-                    <img class="service__icon" src="dist/images/services/modify.svg">
-                    <h3 class="service__title">Modify</h3>
+            <ul class="services">
+                <li class="services__item">
+                    <img class="services__icon" src="dist/images/services/modify.svg">
+                    <h3 class="services__title">Modify</h3>
                 </li>
-                <li class="service">
-                    <img class="service__icon" src="dist/images/services/buy.svg">
-                    <h3 class="service__title">Buy</h3>
+                <li class="services__item">
+                    <img class="services__icon" src="dist/images/services/buy.svg">
+                    <h3 class="services__title">Buy</h3>
                 </li>
-                <li class="service">
-                    <img class="service__icon" src="dist/images/services/repair.svg">
-                    <h3 class="service__title">Repair</h3>
+                <li class="services__item">
+                    <img class="services__icon" src="dist/images/services/repair.svg">
+                    <h3 class="services__title">Repair</h3>
                 </li>
             </ul>
 
             <div class="animation">
                 <!-- ANIMATION -->
-                <img src="dist/images/animation/mountains.svg" alt="" class="mountains">
-                <img src="dist/images/animation/road.svg" alt="" class="road">
-                <img src="dist/images/animation/trees.svg" alt="" class="trees">
+                <div class="mountains"></div>
+                <div class="road"></div>
+                <div class="trees"></div>
                 <img src="dist/images/animation/wagon.png" alt="" class="car">
             </div>
         </section>
@@ -219,7 +233,7 @@
                         </div><!-- .form__item -->
                     </div><!-- .form__group -->
 
-                    <button type="submit" class="form__btn">SEND</button>
+                    <button type="submit" class="form__btn">send</button>
                 </form>
             </div><!-- .contact__info -->
         </section>
@@ -262,5 +276,16 @@
     async defer></script>
 
     <script src="dist/js/index.min.js"></script>
+    <script src="dist/js/rellax.min.js"></script>
+    <script>
+    // Also can pass in optional settings block
+        var rellax = new Rellax('.rellax', {
+            speed: -2,
+            center: false,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+    </script>
 </body>
 </html>

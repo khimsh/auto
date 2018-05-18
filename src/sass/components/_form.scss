@@ -1,11 +1,21 @@
 .form {
 
     &__heading {
-
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        font-weight: 700;
     }
 
     &__group {
 
+        &--text {
+
+        }
+
+        &--radio {
+            display: flex;
+            flex-direction: row;
+        }
     }
 
     &__item {
@@ -18,6 +28,8 @@
 
     &__label {
         font-family: inherit;
+        font-size: 1.6rem;
+        letter-spacing: .16rem;
     }
 
     &__textarea {
@@ -25,6 +37,8 @@
     }
 
     &__btn {
-
+        color: var(--color-white);
+        background-color: var(--color-black);
+        border: none;
     }
 }
