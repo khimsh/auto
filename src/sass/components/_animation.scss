@@ -1,12 +1,16 @@
 /* Animation */
 .animation {
     width: 100%;
-    height: 36.3rem;
+    height: 25rem;
     position: absolute;
     overflow: hidden;
     bottom: 2rem;
 
-    @media only screen and (max-width: $md) {
+    @media only screen and (min-width: $xl) {
+        height: 39rem;
+    }
+
+    @media only screen and (max-width: $sm) {
         display: none;
     }
 }
@@ -22,7 +26,11 @@
     position: absolute;
     bottom: 2rem;
     width: 100%;
-    height: 19.5rem;
+    height: 15rem;
+
+    @media only screen and (min-width: $xl) {
+        height: 19rem;
+    }
 }
 
 .road {
@@ -41,16 +49,24 @@
     background-image: url(../images/animation/trees.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 120rem;
-    height: 26.5rem;
+    height: 20rem;
+    width: 90rem;
+
+    @media only screen and (min-width: $xl) {
+        height: 30rem;
+    }
 }
 
 .car {
-    height: 10rem;
+    height: 7rem;
     width: auto;
     position: absolute;
     bottom: 0;
     animation: drive 7s ease-in-out infinite forwards;
+
+    @media only screen and (min-width: $xl) {
+        height: 10rem;
+    }
 }
 
 @keyframes drive {

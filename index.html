@@ -301,19 +301,19 @@
 
     <script>
         function initMap() {
-            var myLatLng = {lat: -25.363, lng: 131.044};
+            var geolab = {lat: 41.717578, lng: 44.7850189};
 
             // Create a map object and specify the DOM element
             // for display.
             var map = new google.maps.Map(document.getElementById('map'), {
-            center: myLatLng,
-            zoom: 4
+            center: geolab,
+            zoom: 18
             });
 
             // Create a marker and set its position.
             var marker = new google.maps.Marker({
             map: map,
-            position: myLatLng,
+            position: geolab,
             title: 'Hello Auto Service!'
             });
         }
