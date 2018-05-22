@@ -637,12 +637,12 @@ ul {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        width: 70vw;
+        width: 60vw;
         position: relative;
         margin-top: -20rem; } }
-    @media only screen and (max-width: 1420px) {
+    @media only screen and (max-width: 992px) {
       .contact__wrapper {
-        width: 80vw; } }
+        width: 90vw; } }
   .contact__social {
     -webkit-box-flex: 0;
         -ms-flex: 0;
