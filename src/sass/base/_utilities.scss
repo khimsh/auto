@@ -4,3 +4,10 @@
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
 }
+
+.hide-lg-and-down {
+
+    @media only screen and (max-width: $lg) {
+        display: none;
+    }
+}

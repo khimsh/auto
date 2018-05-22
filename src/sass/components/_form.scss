@@ -1,15 +1,14 @@
 .form {
-    padding: 5rem 8rem;
+    padding: 2.5rem 4rem;
 
     position: relative;
     flex-shrink: 0;
-    width: 812px;
 
-    @media only screen and (max-width: $lg) {
-        padding: 2.5rem 4rem;
+    @media only screen and (min-width: $xl) {
+        padding: 5rem 8rem;
     }
 
-    @media only screen and (max-width: $md) {
+    @media only screen and (max-width: $lg) {
         background-color: var(--color-beige);
     }
 
@@ -21,8 +20,10 @@
 
         margin-bottom: 4rem;
 
-        @media only screen and (max-width: $md) {
-            display: none;
+        @media only screen and (max-width: $lg) {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
         }
     }
 
@@ -31,10 +32,10 @@
         margin-bottom: 4rem;
 
         &--left {
-            margin-right: 9rem;
+            margin-right: 4.5rem;
 
-            @media only screen and (max-width: $lg) {
-                margin-right: 4.5rem;
+            @media only screen and (min-width: $xl) {
+                margin-right: 9rem;
             }
 
             @media only screen and (max-width: $sm) {
@@ -46,6 +47,10 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+        }
+
+        @media only screen and (max-width: $lg) {
+            margin-bottom: 2rem;
         }
 
         @media only screen and (max-width: $md) {
@@ -116,7 +121,6 @@
         font-family: inherit;
 
         &--text {
-            letter-spacing: .32rem;
             border: none;
             background-color: var(--color-grey);
             padding-left: 2.4rem;

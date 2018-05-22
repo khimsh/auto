@@ -18,10 +18,15 @@
 }
 
 .heading-tertiary {
-    font-size: 5rem;
-    letter-spacing: 1rem;
+    font-size: 4rem;
+    letter-spacing: .4rem;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media only screen and (min-width: $xl) {
+        font-size: 5rem;
+        letter-spacing: 1rem;
+    }
 
     @media only screen and (max-width: $lg) {
         font-size: 3rem;
@@ -34,15 +39,15 @@
 }
 
 .subheading {
-    font-size: 5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     letter-spacing: 2.5px;
 
     margin-top: auto;
     margin-bottom: 3rem;
 
-    @media only screen and (max-width: $lg) {
-        font-size: 3rem;
+    @media only screen and (min-width: $xl) {
+        font-size: 5rem;
     }
 
     @media only screen and (max-width: $md) {

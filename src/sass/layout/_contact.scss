@@ -2,22 +2,22 @@
 .contact {
     position: relative;
     height: 85vh;
-    margin-bottom: 2vh;
-    overflow: hidden;
 
-    @media only screen and (max-width: $md) {
+    @media only screen and (max-width: $lg) {
         height: auto;
+        overflow: initial;
     }
 
     /* Google Maps */
     &__map {
-        width: 83vw;
+        width: 80vw;
         height: 80vh;
         margin: 0 auto;
+        margin-bottom: 7vh;
 
-        @media only screen and (max-width: $md) {
+        @media only screen and (max-width: $lg) {
             width: 100%;
-            height: 573px;
+            height: 57.3rem;
         }
     }
 
@@ -32,11 +32,17 @@
         transform: translateX(-50%);
 
         display: flex;
-        height: 584px;
+        width: 65vw;
 
-        @media only screen and (max-width: $md) {
+        @media only screen and (max-width: $lg) {
             flex-direction: column;
-            width: 84vw;;
+            width: 70vw;
+            position: relative;
+            margin-top: -20rem;
+        }
+
+        @media only screen and (max-width: $lg) {
+            width: 80vw;
         }
     }
 
@@ -44,6 +50,7 @@
     &__social {
         flex: 0;
         padding: 4rem 5rem;
+        width: 24vw;
 
         background-color: var(--color-beige);
 
@@ -52,11 +59,13 @@
         justify-content: space-between;
         align-items: center;
 
+        position: relative;
+
         @media only screen and (max-width: $lg) {
             padding: 2rem 3rem;
         }
 
-        @media only screen and (max-width: $md) {
+        @media only screen and (max-width: $lg) {
             order: 1;
             width: 120%;
             margin-left: -10%;
