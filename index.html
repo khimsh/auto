@@ -97,7 +97,7 @@
             <div class="dot dot--4 dot--white rellax" data-rellax-speed="5"></div>
             <div class="dot dot--5 dot--red rellax" data-rellax-speed="1"></div>
             <div class="dot dot--6 dot--white rellax" data-rellax-speed="-1"></div>
-            <div class="dot dot--7 dot--white rellax" data-rellax-speed="-7"></div>
+            <div class="dot dot--7 dot--white rellax" data-rellax-speed="-2"></div>
             <div class="dot dot--8 dot--white rellax" data-rellax-speed="6"></div>
             <div class="dot dot--9 dot--red rellax" data-rellax-speed="10"></div>
             <div class="dot dot--10 dot--red rellax" data-rellax-speed="5"></div>
@@ -139,33 +139,34 @@
         <!-- Section: CONTACT -->
         <section class="contact" id="contact">
             <div id="map" class="contact__map"></div>
-            <div class="contact__info">
+            <div class="contact__wrapper">
                 <div class="contact__social">
+
                     <h3 class="heading-tertiary">CONTACT INFROMATION</h3>
 
                     <h4 class="subheading">click to view</h4>
 
                     <!-- SOCIAL MEDIA ICONS -->
-                    <div class="social-media-icons hide-on-medium-and-down">
+                    <div class="social-media">
                         <!-- GOOGLE+ -->
-                        <a class="social-media" href="#">
+                        <a class="social-media__link" href="#">
                             <svg class="social-media__icon">
                                 <use xlink:href="dist/images/sprite.svg#icon-google-plus"></use>
                             </svg>
                         </a>
                         <!-- FACEBOOK -->
-                        <a class="social-media" href="#">
+                        <a class="social-media__link" href="#">
                             <svg class="social-media__icon">
                                 <use xlink:href="dist/images/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                         <!-- TWITTER -->
-                        <a class="social-media" href="#">
+                        <a class="social-media__link" href="#">
                             <svg class="social-media__icon">
                                 <use xlink:href="dist/images/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
-                    </div><!-- .social-media-icons -->
+                    </div><!-- .social-media -->
                 </div><!-- .contact__social -->
 
                 <!-- CONTACT FORM -->
@@ -173,80 +174,126 @@
 
                     <h3 class="form__heading">Get in touch</h3>
 
-                    <!-- INPUT: TEXT -->
-                    <div class="form__group form__group--text">
-                        <div class="form__item form__item--text">
-                            <input type="text" name="name" id="name" class="form__input" placeholder="name">
-                            <label for="name" class="form__label">name</label>
-                        </div><!-- .form__item -->
+                    <div class="form__content">
 
-                        <div class="form__item form__item--text">
-                            <input type="email" name="email" id="email" class="form__input" placeholder="email">
-                            <label for="email" class="form__label">email</label>
-                        </div><!-- .form__item -->
+                        <div class="form__content--left">
 
-                        <div class="form__item form__item--text">
-                            <input type="text" name="subject" id="subject" class="form__input" placeholder="subject">
-                            <label for="subject" class="form__label">subject</label>
-                        </div><!-- .form__item -->
+                            <!-- INPUT: TEXT -->
+                            <div class="form__group form__group--text">
+                                <div class="form__item form__item--text">
+                                    <input type="text" name="name" id="name" class="form__input form__input--text" placeholder="name" required>
+                                    <label for="name" class="form__label form__label--text">name</label>
 
-                        <div class="form__item form__item--text">
-                            <textarea name="textarea" cols="30" rows="5" placeholder="text" class="form__textarea"></textarea>
-                        </div><!-- .form__item -->
-                    </div><!-- .form__group -->
+                                    <div class="form__message form__message--danger form__message--shown">please write your name</div>
+                                </div><!-- .form__item -->
 
-                    <!-- INPUT: RADIO -->
-                    <div class="form__group form__group--radio">
-                        <div class="form__item form__item--radio">
-                            <input type="radio" name="gender" value="male" id="male" class="form__input">
-                            <label for="male" class="form__label">male</label>
-                        </div><!-- .form__item -->
 
-                        <div class="form__item form__item--radio">
-                            <input type="radio" name="gender" value="female" id="female" class="form__input">
-                            <label for="female" class="form__label">female</label>
-                        </div><!-- .form__item -->
-                    </div><!-- .form__group -->
+                                <div class="form__item form__item--text">
+                                    <input type="email" name="email" id="email" class="form__input form__input--text" placeholder="email" required>
+                                    <label for="email" class="form__label form__label--text">email</label>
 
-                    <!-- INPUT: CHECKBOX -->
-                    <div class="form__group form__group--checkbox">
-                        <h3 class="form__group__heading">Sign up for newsletter:</h3>
+                                    <div class="form__message form__message--danger form__message--shown">please write your email</div>
+                                </div><!-- .form__item -->
 
-                        <div class="form__item form__item--checkbox">
-                            <input type="checkbox" name="newsletter" id="images" class="form__input">
-                            <label for="images" class="form__label">receive images</label>
-                        </div><!-- .form__item -->
 
-                        <div class="form__item form__item--checkbox">
-                            <input type="checkbox" name="newsletter" id="promotions" class="form__input">
-                            <label for="promotions" class="form__label">receive promotions</label>
-                        </div><!-- .form__item -->
+                                <div class="form__item form__item--text">
+                                    <input type="text" name="subject" id="subject" class="form__input form__input--text" placeholder="subject" required>
+                                    <label for="subject" class="form__label form__label--text">subject</label>
 
-                        <div class="form__item form__item--checkbox">
-                            <input type="checkbox" name="newsletter" id="updates" class="form__input">
-                            <label for="updates" class="form__label">receive updates</label>
-                        </div><!-- .form__item -->
+                                    <div class="form__message form__message--danger form__message--shown">please write subject</div>
+                                </div><!-- .form__item -->
 
-                        <div class="form__item form__item--checkbox">
-                            <input type="checkbox" name="newsletter" id="job" class="form__input">
-                            <label for="cameras" class="form__label">receive job offers</label>
-                        </div><!-- .form__item -->
-                    </div><!-- .form__group -->
 
-                    <button type="submit" class="form__btn">send</button>
+                                <div class="form__item form__item--text">
+                                    <textarea name="textarea" cols="30" rows="5" placeholder="text" class="form__textarea" required></textarea>
+
+                                    <div class="form__message form__message--danger form__message--shown">please write text</div>
+                                </div><!-- .form__item -->
+
+                            </div><!-- .form__group -->
+
+                        </div><!-- .form__content--left -->
+
+                        <div class="form__content--right">
+
+                            <!-- INPUT: RADIO -->
+                            <div class="form__group form__group--radio">
+                                <div class="form__item form__item--radio">
+                                    <input type="radio" name="gender" value="male" id="male" class="form__input form__input--radio">
+                                    <label for="male" class="form__label">male</label>
+                                </div><!-- .form__item -->
+
+                                <div class="form__item form__item--radio">
+                                    <input type="radio" name="gender" value="female" id="female" class="form__input form__input--radio">
+                                    <label for="female" class="form__label">female</label>
+                                </div><!-- .form__item -->
+
+                                <div class="form__message form__message--danger form__message--shown">please choose your gender</div>
+                            </div><!-- .form__group -->
+
+                            <!-- INPUT: CHECKBOX -->
+                            <div class="form__group form__group--checkbox">
+                                <h3 class="form__group__heading">Sign up for newsletter:</h3>
+
+                                <div class="form__item form__item--checkbox">
+                                    <input type="checkbox" name="newsletter" id="images" class="form__input form__input--checkbox">
+                                    <label for="images" class="form__label form__label--checkbox">receive images</label>
+                                </div><!-- .form__item -->
+
+                                <div class="form__item form__item--checkbox">
+                                    <input type="checkbox" name="newsletter" id="promotions" class="form__input form__input--checkbox">
+                                    <label for="promotions" class="form__label form__label--checkbox">receive promotions</label>
+                                </div><!-- .form__item -->
+
+                                <div class="form__item form__item--checkbox">
+                                    <input type="checkbox" name="newsletter" id="updates" class="form__input form__input--checkbox">
+                                    <label for="updates" class="form__label form__label--checkbox">receive updates</label>
+                                </div><!-- .form__item -->
+
+                                <div class="form__item form__item--checkbox">
+                                    <input type="checkbox" name="newsletter" id="job" class="form__input form__input--checkbox">
+                                    <label for="job" class="form__label form__label--checkbox">receive job offers</label>
+                                </div><!-- .form__item -->
+                            </div><!-- .form__group -->
+
+                        </div><!-- .form__content--right -->
+
+                    </div><!-- .form__content -->
+
+                    <div class="form__bottom">
+
+                        <div class="form__message form__message--success form__message--shown">
+                            Thank you for your interest in us, your message has been sent!
+                        </div>
+
+                        <button type="submit" class="form__btn">send</button>
+
+                    </div>
+
                 </form>
-            </div><!-- .contact__info -->
+            </div><!-- .contact__wrapper -->
         </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p class="copyright">
+        <p class="footer__copyright">
             &copy; copyright 2018
         </p>
-        <p class="authors">
-            created by:
-        </p>
+
+        <div class="footer__authors">
+
+            <h4 class="footer__created">created by:</h4>
+
+            <ul class="authors">
+                <li class="authors__item">
+                    <a href="mailto:davit.ivanelashvili@geolab.edu.ge" class="authors__link">Davit Ivanelashvili (Back-end)</a>
+                </li>
+                <li class="authors__item">
+                    <a href="mailto:ia.khimshiashvili@geolab.edu.ge" class="authors__link">Ia Khimsh (Front-end)</a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
 
@@ -267,7 +314,7 @@
             var marker = new google.maps.Marker({
             map: map,
             position: myLatLng,
-            title: 'Hello World!'
+            title: 'Hello Auto Service!'
             });
         }
 
@@ -276,16 +323,11 @@
     async defer></script>
 
     <script src="dist/js/index.min.js"></script>
+
+    <!-- PARALLAX -->
     <script src="dist/js/rellax.min.js"></script>
     <script>
-    // Also can pass in optional settings block
-        var rellax = new Rellax('.rellax', {
-            speed: -2,
-            center: false,
-            round: true,
-            vertical: true,
-            horizontal: false
-        });
+        var rellax = new Rellax('.rellax');
     </script>
 </body>
 </html>

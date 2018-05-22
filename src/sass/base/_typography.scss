@@ -7,13 +7,30 @@
     margin-bottom: 9rem;
 
     @media only screen and (max-width: $lg) {
-        font-size: 4rem;
+        margin-bottom: 7rem;
     }
 }
 
 .heading-tertiary {
-    font-weight: 700;
     font-size: 5rem;
-    letter-spacing: .25rem;
+    letter-spacing: 1rem;
+    font-weight: 700;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $md) {
+        display: none;
+    }
+}
+
+.subheading {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+
+    margin-top: auto;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $md) {
+        margin-bottom: 0;
+    }
 }

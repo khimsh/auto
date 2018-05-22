@@ -17,6 +17,11 @@
         position: absolute;
         left: 3rem;
         top: 7.5rem;
+        z-index: 200;
+    }
+
+    &__title--red {
+        color: var(--color-red);
     }
 
     &__title span {
@@ -26,11 +31,11 @@
     &__title span::before {
         content: "";
         position: absolute;
-        background-color: var(--color-white);
+        background-color: currentColor;
         width: 3.5rem;
         height: 3.5rem;
         border-radius: 50%;
         top: -1rem;
-        left: 2.1rem;
+        left: 2.2rem;
     }
 }

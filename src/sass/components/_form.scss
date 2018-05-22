@@ -1,44 +1,221 @@
 .form {
+    padding: 5rem 8rem;
+
+    position: relative;
+    flex-shrink: 0;
+    width: 812px;
+
+    @media only screen and (max-width: $lg) {
+        padding: 2.5rem 4rem;
+    }
+
+    @media only screen and (max-width: $md) {
+        background-color: var(--color-beige);
+    }
 
     &__heading {
         font-size: 5rem;
         letter-spacing: 1rem;
         font-weight: 700;
+        text-transform: uppercase;
+
+        margin-bottom: 4rem;
+
+        @media only screen and (max-width: $md) {
+            display: none;
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin-bottom: 4rem;
+
+        &--left {
+            margin-right: 9rem;
+
+            @media only screen and (max-width: $lg) {
+                margin-right: 4.5rem;
+            }
+
+            @media only screen and (max-width: $sm) {
+                margin-right: 0;
+            }
+        }
+
+        &--right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media only screen and (max-width: $md) {
+            margin-bottom: 0;
+        }
+
+        @media only screen and (max-width: $sm) {
+            flex-direction: column;
+        }
     }
 
     &__group {
 
         &--text {
 
+            @media only screen and (max-width: $sm) {
+                width: 100%;
+            }
         }
 
         &--radio {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+
+            position: relative;
+
+            @media only screen and (max-width: $sm) {
+                justify-content: flex-start;
+            }
+
+            .form__message {
+                bottom: 1rem;
+            }
+        }
+
+        &--checkbox {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        &__heading {
+            font-size: 1.6rem;
+            letter-spacing: .32rem;
+            margin-bottom: 3rem;
         }
     }
 
     &__item {
+        position: relative;
 
+        &--text {
+            margin-bottom: 3rem;
+        }
+
+        &--radio {
+            margin-bottom: 3rem;
+
+            @media only screen and (max-width: $sm) {
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+            }
+        }
     }
 
     &__input {
         font-family: inherit;
+
+        &--text {
+            letter-spacing: .32rem;
+            border: none;
+            background-color: var(--color-grey);
+            padding-left: 2.4rem;
+            height: 4rem;
+            width: 24rem;
+
+            @media only screen and (max-width: $sm) {
+                width: 100%;
+            }
+        }
+
+        &--radio {
+            margin-right: 2rem;
+        }
+
+        &--checkbox {
+            margin-bottom: 2rem;
+            margin-right: 2.8rem;
+        }
     }
 
     &__label {
         font-family: inherit;
         font-size: 1.6rem;
         letter-spacing: .16rem;
+
+        &--text {
+            display: none;
+        }
+
+        &--checkbox {
+            white-space: nowrap;
+        }
     }
 
     &__textarea {
         font-family: inherit;
+        letter-spacing: .32rem;
+        border: none;
+        background-color: var(--color-grey);
+        padding-left: 2.4rem;
+        padding-top: 1.6rem;
+        width: 24rem;
+
+        @media only screen and (max-width: $sm) {
+            width: 100%;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     &__btn {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: .4rem;
         color: var(--color-white);
         background-color: var(--color-black);
         border: none;
+        padding: 1.2rem 1.4rem;
+
+        margin-left: 2rem;
+
+        @media only screen and (max-width: $sm) {
+            order: -1;
+            margin-left: 0;
+            margin-right: 2rem;
+        }
+    }
+
+    /* Validation Messages */
+    &__message {
+        font-size: 1.1rem;
+
+        position: absolute;
+
+        /* Hides Message Initially */
+        display: none;
+
+        &--danger {
+            color: var(--color-red);
+            letter-spacing: 1.1px;
+            bottom: -2rem;
+        }
+
+        &--success {
+            color: var(--color-green);
+            font-size: 1.4rem;
+            letter-spacing: 1.4px;
+
+            position: relative;
+        }
+
+        /* Displays Message */
+        &--shown {
+            display: block;
+        }
     }
 }

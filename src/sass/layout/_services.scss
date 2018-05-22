@@ -6,6 +6,10 @@
     position: relative;
     padding: 9rem 0 0 0;
 
+    @media only screen and (max-width: $lg) {
+        padding-top: 7rem;
+    }
+
     @media only screen and (max-width: $sm) {
         height: auto;
         margin-bottom: 8rem;

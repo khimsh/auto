@@ -1,6 +1,7 @@
 const menuBtn = document.getElementById('menu-toggle');
 const mainNav = document.getElementById('nav');
 const navLink = document.querySelectorAll('main-nav__link');
+const headerTitle = document.querySelector('.header__title');
 
 menuBtn.addEventListener('click', function() {
     toggleMenu();
@@ -22,4 +23,5 @@ navLink.forEach(function (link){
 function toggleMenu() {
     menuBtn.classList.toggle('active');
     mainNav.classList.toggle('open');
+    headerTitle.classList.toggle('header__title--red');
 }
